@@ -41,8 +41,7 @@ body{
   max-width: 100%;
   max-height: 400px;
   margin-top: 10px;
-  border-radius: 10px;
-}
+ }
 .imgCanvas{
   max-height: 400px;
   overflow: hidden;
