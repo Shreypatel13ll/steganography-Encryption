@@ -66,6 +66,7 @@ font-family: 'Courier Prime', monospace;
 .wrap {
   display: flex;
   padding: 30px;
+  margin-top: 25px;
   flex-direction: column;
   border-radius: 15px;
    background-color: #bb86fc;
