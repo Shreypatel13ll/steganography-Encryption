@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steganography</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="wrap">    
+      <div class="box">Encode an image with a message</div>
+      <div class="box">
+      <label>Enter a message to hide within the image:</br></label><br/>
+      <input class="input button" style="margin-top: 0px;"type="password" id="message" placeholder="Enter your secret message">
+    </div>
+    <div class="box" style="position: relative">
+      <label>Upload an image:</label><br/>
+      <input style="margin-left: 20px;" class="image-upload" accept="image/*"type="file" id="imageLoader" name="imageLoader"/>
+      <canvas id="imageCanvas"></canvas>
+      <div class="image" id="download" >
+      <img src="./download.png" style="width: 100%; height: 100%;" onclick="download(this)">
+    </div>
+      <canvas id="textCanvas"></canvas>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="box">Decode an image</div>
+    <div class="box">
+    <label>Upload an image:</label><br/>
+      <input style="margin-left: 20px;" type="file" id="imageLoader2" name="imageLoader2"/>
+      <div class="imgCanvas">
+      <canvas id="imageCanvas2"></canvas>
+    </div>
+    </div>  
+    </div>
+  </div>
+	<script src="./script.js"></script>
+  </body>
+</html>
